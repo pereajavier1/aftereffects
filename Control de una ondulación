@@ -1,0 +1,11 @@
+// Slider Control: Las expresiones se pueden añadir a los fotogramas clave reemplazando valores con vínculos a controles de expresión, como un Control del regulador. 
+// Sustituyendo el segundo argumento de la expresión ondulación() por un vínculo a un Control de regulador
+// Se puede añadir un fotograma clave para que el comportamiento se inicie y se detenga en momentos específicos.
+url: https://helpx.adobe.com/ar/after-effects/using/expression-examples.html
+
+// Utiliza el icono espiral para crear el vínculo de “efecto (...)” al regulador
+var wiggleAmount = effect(“Wiggle Amount”)(“Slider”);
+
+// Ondula cuatro veces por segundo la cantidad definida por el regulador 
+
+wiggle( 4, wiggleAmount );
